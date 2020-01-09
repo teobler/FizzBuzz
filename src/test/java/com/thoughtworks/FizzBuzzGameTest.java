@@ -29,4 +29,9 @@ public class FizzBuzzGameTest {
   public void should_return_FizzWhizz_given_number_is_multiples_of_3_and_7() {
     assertEquals(FizzBuzzGame.fizzBuzz(21), "FizzWhizz");
   }
+
+  @Test
+  public void should_return_BuzzWhizz_given_number_is_multiples_of_5_and_7() {
+    assertEquals(FizzBuzzGame.fizzBuzz(35), "BuzzWhizz");
+  }
 }
