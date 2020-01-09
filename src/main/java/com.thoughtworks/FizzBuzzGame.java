@@ -10,6 +10,10 @@ public class FizzBuzzGame {
       return "Buzz";
     }
 
+    if (number % 7 == 0) {
+      return "Whizz";
+    }
+
     return String.valueOf(number);
   }
 }
