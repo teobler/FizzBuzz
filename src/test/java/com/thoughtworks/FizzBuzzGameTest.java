@@ -6,6 +6,11 @@ import static org.junit.Assert.assertEquals;
 
 public class FizzBuzzGameTest {
   @Test
+  public void should_return_number_it_self_if_number_does_not_match_any_condition() {
+    assertEquals(FizzBuzzGame.fizzBuzz(1), "1");
+  }
+
+  @Test
   public void should_return_Fizz_given_number_is_multiples_of_3() {
     assertEquals(FizzBuzzGame.fizzBuzz(33), "Fizz");
   }
