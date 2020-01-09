@@ -4,6 +4,10 @@ public class FizzBuzzGame {
   public static String fizzBuzz(Integer number) {
     String result = "";
 
+    if (String.valueOf(number).contains("5")) {
+      return "BuzzWhizz";
+    }
+
     if (String.valueOf(number).contains("3")) {
       return "Fizz";
     }
