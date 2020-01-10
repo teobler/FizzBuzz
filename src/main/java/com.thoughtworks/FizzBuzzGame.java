@@ -47,6 +47,12 @@ public class FizzBuzzGame {
       return result;
     }
 
+    if (number % 7 == 0) {
+      result = result + "Whizz";
+
+      return result;
+    }
+
     return stringNumber;
   }
 }
