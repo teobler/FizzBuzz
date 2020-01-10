@@ -37,22 +37,16 @@ public class FizzBuzzGame {
 
     if (number % 3 == 0) {
       result = result + "Fizz";
-
-      return result;
     }
 
     if (number % 5 == 0) {
       result = result + "Buzz";
-
-      return result;
     }
 
     if (number % 7 == 0) {
       result = result + "Whizz";
-
-      return result;
     }
 
-    return stringNumber;
+    return "".equals(result) ? stringNumber : result;
   }
 }

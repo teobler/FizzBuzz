@@ -39,6 +39,12 @@ public class FizzBuzzGameTest {
   }
 
   @Test
+  public void should_return_FizzWhizz_given_a_number_is_multiples_of_37_and_not_match_any_other_previous_conditions() {
+    assertEquals(FizzBuzzGame.fizzBuzz(21), "FizzWhizz");
+    assertEquals(FizzBuzzGame.fizzBuzz(189), "FizzWhizz");
+  }
+
+  @Test
   public void should_return_Fizz_given_a_number_is_multiples_of_3_and_not_match_any_other_previous_conditions() {
     assertEquals(FizzBuzzGame.fizzBuzz(3), "Fizz");
     assertEquals(FizzBuzzGame.fizzBuzz(6), "Fizz");
