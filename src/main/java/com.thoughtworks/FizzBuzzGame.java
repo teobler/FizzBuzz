@@ -29,6 +29,12 @@ public class FizzBuzzGame {
       return result;
     }
 
+    if (stringNumber.contains("3")) {
+      result = result + "Fizz";
+
+      return result;
+    }
+
     return stringNumber;
   }
 }
