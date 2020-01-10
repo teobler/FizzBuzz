@@ -41,6 +41,12 @@ public class FizzBuzzGame {
       return result;
     }
 
+    if (number % 5 == 0) {
+      result = result + "Buzz";
+
+      return result;
+    }
+
     return stringNumber;
   }
 }
