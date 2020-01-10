@@ -8,6 +8,10 @@ public class FizzBuzzGame {
             return "Fizz";
         }
 
+        if (stringNumber.contains("7") && number % 7 == 0) {
+            return "Whizz";
+        }
+
         return stringNumber;
     }
 }
