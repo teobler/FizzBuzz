@@ -27,7 +27,7 @@ public class FizzBuzzGame {
         result = result + "Whizz";
       }
 
-      return result;
+      return "".equals(result) ? String.valueOf(number) : result;
     }
 
     if (stringNumber.contains("5")) {
@@ -39,7 +39,7 @@ public class FizzBuzzGame {
         result = result + "Whizz";
       }
 
-      return result;
+      return "".equals(result) ? String.valueOf(number) : result;
     }
 
     result = result + "Fizz";

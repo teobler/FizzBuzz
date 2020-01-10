@@ -64,4 +64,9 @@ public class FizzBuzzGameTest {
     assertEquals(FizzBuzzGame.fizzBuzz(14), "Whizz");
     assertEquals(FizzBuzzGame.fizzBuzz(28), "Whizz");
   }
+
+  @Test
+  public void should_return_number_string_given_a_number_does_not_match_any_conditions() {
+    assertEquals(FizzBuzzGame.fizzBuzz(37), "37");
+  }
 }
