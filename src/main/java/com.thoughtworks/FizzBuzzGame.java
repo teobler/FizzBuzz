@@ -12,6 +12,10 @@ public class FizzBuzzGame {
             return "Whizz";
         }
 
+        if (stringNumber.contains("5") && number % 5 == 0) {
+            return "Buzz";
+        }
+
         return stringNumber;
     }
 }
