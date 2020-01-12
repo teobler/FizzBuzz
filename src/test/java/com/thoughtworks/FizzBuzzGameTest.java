@@ -2,6 +2,8 @@ package com.thoughtworks;
 
 import org.junit.Test;
 
+import java.util.stream.IntStream;
+
 import static org.junit.Assert.assertEquals;
 
 public class FizzBuzzGameTest {
@@ -67,6 +69,11 @@ public class FizzBuzzGameTest {
 
   @Test
   public void should_return_number_string_given_a_number_does_not_match_any_conditions() {
-    assertEquals(FizzBuzzGame.fizzBuzz(37), "37");
+    assertEquals("Fizz", FizzBuzzGame.fizzBuzz(37));
+  }
+
+  @Test
+  public void name() {
+    IntStream.range(1, 121).forEach(number -> System.out.println(FizzBuzzGame.fizzBuzz(number)));
   }
 }

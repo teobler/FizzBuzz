@@ -27,10 +27,12 @@ public class FizzBuzzGame {
         result = result + "Whizz";
       }
 
-      return "".equals(result) ? String.valueOf(number) : result;
+      if (!"".equals(result)) {
+        return result;
+      }
     }
 
-    if (stringNumber.contains("5")) {
+    if (stringNumber.contains("5") && !stringNumber.contains("7")) {
       if (number % 5 == 0) {
         result = result + "Buzz";
       }
@@ -39,12 +41,16 @@ public class FizzBuzzGame {
         result = result + "Whizz";
       }
 
-      return "".equals(result) ? String.valueOf(number) : result;
+      if (!"".equals(result)) {
+        return result;
+      }
     }
 
-    result = result + "Fizz";
+    if (stringNumber.contains("3") && !stringNumber.contains("5")) {
+      return "Fizz";
+    }
 
-    return result;
+    return stringNumber;
   }
 
   private static String handleMultipleCase(Integer number) {
