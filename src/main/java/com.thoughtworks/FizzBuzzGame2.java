@@ -3,23 +3,20 @@ package com.thoughtworks;
 public class FizzBuzzGame2 {
   public static String fizzBuzz(Integer number) {
     String stringNumber = number.toString();
+    String result = "";
 
-    if (stringNumber.contains("7") && stringNumber.contains("3") && number % 7 != 0 && number % 3 != 0) {
-      return "Fizz";
+    if (number % 3 == 0) {
+      result += "Fizz";
     }
 
-    if (stringNumber.contains("7") && number % 7 == 0 && number % 3 == 0) {
-      return "FizzWhizz";
+    if (number % 7 == 0) {
+      result += "Whizz";
     }
 
-    if (stringNumber.contains("7") && number % 3 == 0) {
-      return "Fizz";
+    if (stringNumber.contains("7") && stringNumber.contains("3") && "".equals(result)) {
+      result = "Fizz";
     }
 
-    if (stringNumber.contains("7") && number % 7 == 0) {
-      return "Whizz";
-    }
-
-    return number.toString();
+    return "".equals(result) ? number.toString() : result;
   }
 }
