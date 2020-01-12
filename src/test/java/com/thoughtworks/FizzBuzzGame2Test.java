@@ -16,4 +16,9 @@ public class FizzBuzzGame2Test {
     assertEquals("Whizz", FizzBuzzGame2.fizzBuzz(77));
     assertEquals("Whizz", FizzBuzzGame2.fizzBuzz(7));
   }
+
+  @Test
+  public void should_return_FizzWhizz_given_a_number_contains_7_and_is_multiple_of_37() {
+    assertEquals("FizzWhizz", FizzBuzzGame2.fizzBuzz(567));
+  }
 }
