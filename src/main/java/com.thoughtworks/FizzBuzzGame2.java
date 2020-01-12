@@ -22,6 +22,10 @@ public class FizzBuzzGame2 {
       result += "Buzz";
     }
 
+    if (number % 7 == 0) {
+      result += "Whizz";
+    }
+
     return "".equals(result) ? number.toString() : result;
   }
 
