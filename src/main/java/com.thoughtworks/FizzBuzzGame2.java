@@ -12,6 +12,10 @@ public class FizzBuzzGame2 {
       return handleCaseContains5(number);
     }
 
+    if (stringNumber.contains("3")) {
+      return "Fizz";
+    }
+
     return number.toString();
   }
 
