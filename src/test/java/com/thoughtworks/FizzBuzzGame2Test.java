@@ -57,4 +57,10 @@ public class FizzBuzzGame2Test {
     assertEquals("Fizz", FizzBuzzGame2.fizzBuzz(6));
     assertEquals("Fizz", FizzBuzzGame2.fizzBuzz(9));
   }
+
+  @Test
+  public void should_return_itself_given_a_number_is_not_match_any_conditions() {
+    assertEquals("2", FizzBuzzGame2.fizzBuzz(2));
+    assertEquals("1", FizzBuzzGame2.fizzBuzz(1));
+  }
 }
