@@ -2,6 +2,8 @@ package com.thoughtworks;
 
 import org.junit.Test;
 
+import java.util.stream.IntStream;
+
 import static org.junit.Assert.*;
 
 public class FizzBuzzGame2Test {
@@ -59,8 +61,19 @@ public class FizzBuzzGame2Test {
   }
 
   @Test
+  public void should_return_Buzz_given_a_number_is_only_multiple_of_5_and_does_not_contains_357() {
+    assertEquals("Buzz", FizzBuzzGame2.fizzBuzz(10));
+    assertEquals("Buzz", FizzBuzzGame2.fizzBuzz(20));
+  }
+
+  @Test
   public void should_return_itself_given_a_number_is_not_match_any_conditions() {
     assertEquals("2", FizzBuzzGame2.fizzBuzz(2));
     assertEquals("1", FizzBuzzGame2.fizzBuzz(1));
+  }
+
+  @Test
+  public void name() {
+    IntStream.range(1, 121).forEach(number -> System.out.println(FizzBuzzGame2.fizzBuzz(number)));
   }
 }
