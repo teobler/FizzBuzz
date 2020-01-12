@@ -46,4 +46,9 @@ public class FizzBuzzGame2Test {
   public void should_return_Fizz_given_a_number_contains_3_and_does_not_contains_57() {
     assertEquals("Fizz", FizzBuzzGame2.fizzBuzz(33));
   }
+
+  @Test
+  public void should_return_FizzWhizz_given_a_number_is_multiple_of_37_and_does_not_contains_357() {
+    assertEquals("FizzWhizz", FizzBuzzGame2.fizzBuzz(21));
+  }
 }

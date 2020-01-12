@@ -16,7 +16,21 @@ public class FizzBuzzGame2 {
       return "Fizz";
     }
 
-    return number.toString();
+    return handleCaseDoesNotContains357(number);
+  }
+
+  private static String handleCaseDoesNotContains357(Integer number) {
+    String result = "";
+
+    if (number % 3 == 0) {
+      result += "Fizz";
+    }
+
+    if (number % 7 == 0) {
+      result += "Whizz";
+    }
+
+    return "".equals(result) ? number.toString() : result;
   }
 
   private static String handleCaseContains5(Integer number) {
